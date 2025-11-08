@@ -1,0 +1,99 @@
+table,th,tr,td
+{
+    border: solid;
+    border-collapse:collapse;
+    margin: 20px auto;
+}
+table{
+    height: 180px;
+    width: 300px;
+}
+th
+{
+    text-align: center;
+}
+.diag
+{
+    rotate: -60deg;
+}
+.verticale
+{
+    rotate: 50deg;
+}
+/* Style global */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #5f72bd, #9b23ea);
+    margin: 0;
+    padding: 40px;
+    color: #333;
+}
+
+/* Style général des tableaux */
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 40%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Bordures internes */
+table, th, td {
+    border: 2px solid #ddd;
+}
+
+/* Cellules */
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* En-têtes de tableau */
+thead {
+    background: linear-gradient(90deg, #673ab7, #512da8);
+    color: white;
+    font-weight: 600;
+}
+
+/* Alternance de couleur dans les lignes */
+tbody tr:nth-child(even) {
+    background-color: #f3f0ff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ebe6ff;
+}
+
+/* Effet au survol */
+tbody tr:hover {
+    background-color: #d9ceff;
+    transition: 0.3s ease;
+}
+
+/* Texte diagonal */
+.diag {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    color: #ff9800;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Texte vertical */
+.verticale {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    color: #e91e63;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Petit style pour que les tableaux soient bien espacés */
+table + table {
+    margin-top: 60px;
+}

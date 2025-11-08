@@ -1,0 +1,43 @@
+/* Couleur principale de la page */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #e6f1fa; /* violet pour la page */
+}
+
+/* En-tête */
+header {
+    background-color: rgb(10, 143, 238);
+    color: white;
+    padding: 10px 0;src: ;
+}
+
+/* Conteneur de l'en-tête */
+.header-container {
+    display: flex;
+    align-items: center; /* centre verticalement */
+    justify-content: space-between; /* espace entre les éléments */
+    padding: 0 40px;
+}
+
+/* Texte au centre */
+.header-container h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Images du header */
+.header-container img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Effet flottant (hover) sur les images */
+.header-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}

@@ -1,0 +1,44 @@
+/* Couleur fond */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2ff; /*violet*/WW
+    font-family: "Poppins", sans-serif;
+}
+
+/* Liste du menu */
+.menu {
+    list-style: none; /* Enlève les puces */
+    padding: 40px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Les boutons en colonne */
+    align-items: center; /* Centrage horizontal */
+    gap: 20px; /* Espace entre les boutons */
+}
+
+/* Style des liens */
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(10, 143, 238); /* Bleu clair */
+    padding: 15px 40px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au survol */
+.menu li a:hover {
+    background-color: rgb(6, 120, 200); /*Jaune*/
+    transform: translateY(-3px);
+}
+
+/* Effet d’appui (clic) */
+.menu li a:active {
+    transform: scale(0.97);
+}

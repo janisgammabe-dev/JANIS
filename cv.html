@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - GAMMABE Janis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .photo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .header-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .header-info h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        
+        .contact-item i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .main-content {
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 35%;
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+        }
+        
+        .content {
+            width: 65%;
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            color: #6a11cb;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .sidebar .section-title {
+            color: #6a11cb;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+        }
+        
+        .info-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .info-item .date {
+            color: #6a11cb;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        .sidebar .info-item h3 {
+            color: white;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .skill {
+            background: rgba(106, 17, 203, 0.1);
+            color: #6a11cb;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .progress-bar {
+            background: #e0e0e0;
+            height: 8px;
+            border-radius: 4px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: #6a11cb;
+            border-radius: 4px;
+        }
+        
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .interest {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .interest i {
+            margin-right: 8px;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .sidebar, .content {
+                width: 100%;
+            }
+            
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .photo-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="photo-container">
+                <img src="images/image_moi.jpg" alt="Une photo de moi" width="180">" alt="Photo de Janis Gammabe">
+            </div>
+            <div class="header-info">
+                <h1>GAMMABE Janis</h1>
+                <h2>Étudiante en Réseaux, Sécurité et Mobilité</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>01 95 88 97 88</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>janisgammabe@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bénin</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>14 décembre 2007</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-user-graduate"></i> FORMATION</h3>
+                    <div class="info-item">
+                        <h3>Réseaux, Sécurité et Mobilité</h3>
+                        <div class="date">2025 - Présent</div>
+                        <p>Pigier Bénin</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>BAC</h3>
+                        <div class="date">2023 - 2024</div>
+                        <p>Lycée</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>BEPC</h3>
+                        <div class="date">2020 - 2021</div>
+                        <p>Collège</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>CEP</h3>
+                        <div class="date">2016 - 2017</div>
+                        <p>École primaire</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-language"></i> LANGUES</h3>
+                    <div class="info-item">
+                        <div class="lang-item">
+                            <span>Français</span>
+                            <span>Courant</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="lang-item">
+                            <span>Anglais</span>
+                            <span>Intermédiaire</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 42%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-heart"></i> CENTRES D'INTÉRÊT</h3>
+                    <div class="interests">
+                        <div class="interest">
+                            <i class="fas fa-music"></i> Musique
+                        </div>
+                        <div class="interest">
+                            <i class="fas fa-book"></i> Lecture
+                        </div>
+                        <div class="interest">
+                            <i class="fas fa-utensils"></i> Cuisine
+                        </div>
+                        <div class="interest">
+                            <i class="fas fa-laptop-code"></i> Technologie
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-user"></i> PROFIL</h3>
+                    <p>Étudiante motivée en première année de Réseaux, Sécurité et Mobilité à Pigier Bénin. Passionnée par les technologies de l'information et désireuse d'acquérir des compétences techniques solides pour assurer la sécurité et la performance des systèmes informatiques.</p>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-briefcase"></i> EXPÉRIENCE</h3>
+                    <div class="info-item">
+                        <h3>Projet académique - Configuration réseau</h3>
+                        <div class="date">2025</div>
+                        <p>Mise en place d'un réseau local avec configuration des équipements et tests de sécurité.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Stage d'observation</h3>
+                        <div class="date">2025</div>
+                        <p>Découverte des métiers de l'informatique, de la télécommunication et des nouvelles technologies dans une entreprise locale.</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-laptop-code"></i> COMPÉTENCES</h3>
+                    <div class="skills">
+                        <div class="skill">Réseaux informatiques</div>
+                        <div class="skill">Travail en équipe</div>
+                        <div class="skill">Maitrise de quelques outils informatiques</div>
+                        <div class="skill"> Mon site personnel avec HTML/CSS</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-trophy"></i> OBJECTIFS</h3>
+                    <p>Devenir une spécialiste en cybersécurité capable de concevoir et de maintenir des infrastructures réseau sécurisées. À moyen terme, j'aspire à obtenir des certifications professionnelles et à contribuer à la protection des systèmes d'information d'organisations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>CV de GAMMABE Janis - Mis à jour en 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
